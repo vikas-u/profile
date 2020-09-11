@@ -1,556 +1,751 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <title>Vikas Ummadisetty &mdash; Personal Portfolio</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <link rel="stylesheet" href="css/custom-bs.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
-    <link rel="stylesheet" href="fonts/line-icons/style.css">
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
 
-    <link rel="stylesheet" href="css/style.css">    
-  </head>
-  <body>
+   <!--- basic page needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Vikas Ummadisetty</title>
+	<meta name="description" content="">  
+	<meta name="author" content="">
 
-  <div id="overlayer"></div>
-  <div class="loader">
-    <div class="spinner-border text-primary" role="status">
-      <span class="sr-only">Loading...</span>
-    </div>
-  </div>
-    
+   <!-- mobile specific metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-<div class="site-wrap">
+ 	<!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="css/base.css">  
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/vendor.css">     
 
-    <div class="site-mobile-menu site-navbar-target">
-      <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close mt-3">
-          <span class="icon-close2 js-menu-toggle"></span>
-        </div>
-      </div>
-      <div class="site-mobile-menu-body"></div>
-    </div> 
-    
+   <!-- script
+   ================================================== -->   
+	<script src="js/modernizr.js"></script>
+	<script src="js/pace.min.js"></script>
 
-    <!-- NAVBAR -->
-    <header class="site-navbar mt-3" id="top">
-      <div class="container-fluid">
-        <div class="row align-items-center">
-          <div class="site-logo col-6"><a href="index.html">VU</a></div>
+   <!-- favicons
+	================================================== -->
+	<link rel="icon" type="image/png" href="favicon.png">
 
-          <nav class="mx-auto site-navigation">
-            <ul class="site-menu js-clone-nav d-none d-lg-block">
-              <li><a href="index.html" class="nav-link active">Home</a></li>
-              <li><a href="#about-us-section" class="scroll-button smoothscroll">About</a></li>
-              <li><a href="#portfolio-section" class="scroll-button smoothscroll">Projects</a></li>
-              <li><a href="#next-section" class="scroll-button smoothscroll">Work Experience</a></li>
-              <li><a href="#contact" class="scroll-button smoothscroll">Contact</a></li>
-            </ul>
-          </nav>
-          
-          <div class="col-6 site-burger-menu d-block d-lg-none text-right">
-            <a href="#" class="site-menu-toggle js-menu-toggle"><span class="icon-menu h3"></span></a>
-          </div>
+</head>
 
-        </div>
-      </div>
-    </header>
+<body id="top">
 
-    <!-- HOME -->
-    <section class="home-section section-hero overlay slanted" id="home-section">
+	<!-- header 
+   ================================================== -->
+   <header>   	
+   	<div class="row">
 
-      <div class="container">
-        <div class="row align-items-center justify-content-center">
-          <div class="col-md-8 text-center">
-            <h1>Vikas Ummadisetty</h1>
-            <div class="mx-auto w-75">
-              <p></p>
-            </div>
-            <p class="mt-5"><a href="#about-us-section" class="btn btn-outline-white btn-md smoothscroll">Learn More</a></p>
-          </div>
-        </div>
-      </div>
-        
-      <!-- VIDEO -->
-      <div class="video-container">
-        <video autoplay loop="true">
-          <source type="video/mp4" src="videos/video.mp4">
-        </video>
-      </div>
+   		<div class="top-bar">
+   			<a class="menu-toggle" href="#"><span>Menu</span></a>
 
-      <a href="#about-us-section" class="scroll-button smoothscroll">
-        <span class=" icon-keyboard_arrow_down"></span>
-      </a>
+	   		<div class="logo">
+		         <a href="index.html">VU</a>
+		      </div>		      
 
-    </section>
-    
-    <!-- ABOUT US -->
-    <section class="site-section about-us-section" id="about-us-section">
-      <div class="container">
-        
-        <div class="row mb-5 pt-0 site-section">
-          <div class="col-md-5 align-self-center">
-            <h3 class="section-title-sub text-primary"></h3>
-            <h2 class="section-title mb-4">About Me</h2>
+		   	<nav id="main-nav-wrap">
+					<ul class="main-navigation">
+						<li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
+						<li><a class="smoothscroll"  href="#about" title="">About</a></li>
+						<li><a class="smoothscroll"  href="#resume" title="">Resume</a></li>
+						<li><a class=""  href="deda.html" target="_blank" title="">DEDA</a></li>
+						<li><a class="smoothscroll"  href="#portfolio" title="">Projects</a></li>					
+						<li><a class="smoothscroll"  href="#contact" title="">Contact</a></li>	
+					</ul>
+				</nav>    		
+   		</div> <!-- /top-bar --> 
+   		
+   	</div> <!-- /row --> 		
+   </header> <!-- /header -->
 
-            <p>Hello, I'm Vikas!</p>
-            <p>I am a student at Dublin High School in the Dublin Engineering and Design Academy. My interests lie in programming and robotics.</p>
-            <p>I love problem-solving and competing in STEM-related activities. I attend robotics, science olympiad, cyberpatriot competitions and find way to get involved with my community.</p> 
-            <p class="mt-4">Feel free to explore my website to learn more about me and <a href="mailto:ummadisettyvikas@gmail.com" class="spepcial_link">email me</a> with any comments, questions, or concerns.</p> 
-          </div>
-          
-          <div class="col-md-7 ml-auto">
-            <div class="container" style="padding-bottom:50px;"></div>
-            <div class="img-1"><img src="images/face.jpg" style:="" alt="Image" class="img-fluid img-shadow"></div>
-          </div>
-        </div>
+	<!-- intro section
+   ================================================== -->
+   <section id="intro">   
 
-      </div>
-    </section>
+   	<div class="intro-overlay"></div>	
 
-    <!-- SERVICES 
-    <section class="site-section services-section bg-light block__62849" id="services-section">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-12 text-center" data-aos="fade">
-            <h3 class="section-title-sub text-primary">Our Services</h3>
-            <h2 class="section-title mb-3">Services</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-6 col-md-6 col-lg-4 mb-4 mb-lg-5">
+   	<div class="intro-content">
+   		<div class="row">
 
-            <a href="service-single.html" class="block__16443 text-center d-block">
-              <span class="custom-icon mx-auto"><span class="icon-line-tools d-block"></span></span>
-              <h3>Graphic Design</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit facilis, pariatur harum labore aperiam assumenda.</p>
-            </a>
+   			<div class="col-twelve">
 
-          </div>
-          <div class="col-6 col-md-6 col-lg-4 mb-4 mb-lg-5">
-            
-            <a href="service-single.html" class="block__16443 text-center d-block">
-              <span class="custom-icon mx-auto"><span class="icon-line-lightbulb d-block"></span></span>
-              <h3>Marketing Strategy</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit facilis, pariatur harum labore aperiam assumenda.</p>
-            </a>            
+	   			<h5></h5>
+	   			<h1>Vikas Ummadisetty</h1>
 
-          </div>
-          <div class="col-6 col-md-6 col-lg-4 mb-4 mb-lg-5">
-            
-            <a href="service-single.html" class="block__16443 text-center d-block">
-              <span class="custom-icon mx-auto"><span class="icon-line-laptop d-block"></span></span>
-              <h3>Web Design</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit facilis, pariatur harum labore aperiam assumenda.</p>
-            </a>            
+	   			<p class="intro-position">
+	   				<span>Student</span>
+	   				<span>Engineer</span> 
+	   			</p>
 
-          </div>
-          <div class="col-6 col-md-6 col-lg-4 mb-4 mb-lg-5">
-            
-            <a href="service-single.html" class="block__16443 text-center d-block">
-              <span class="custom-icon mx-auto"><span class="icon-line-search d-block"></span></span>
-              <h3>SEO</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit facilis, pariatur harum labore aperiam assumenda.</p>
-            </a>
+	   			<a class="button stroke smoothscroll" href="#about" title="">More About Me</a>
 
-          </div>
-          <div class="col-6 col-md-6 col-lg-4 mb-4 mb-lg-5">
-            
-            <a href="service-single.html" class="block__16443 text-center d-block">
-              <span class="custom-icon mx-auto"><span class="icon-line-presentation d-block"></span></span>
-              <h3>Market Leading </h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit facilis, pariatur harum labore aperiam assumenda.</p>
-            </a>
+	   		</div>  
+   			
+   		</div>   		 		
+   	</div> <!-- /intro-content --> 
 
-          </div>
-          <div class="col-6 col-md-6 col-lg-4 mb-4 mb-lg-5">
-            
-            <a href="service-single.html" class="block__16443 text-center d-block">
-              <span class="custom-icon mx-auto"><span class="icon-line-ribbon d-block"></span></span>
-              <h3>Pixel Perfect Design</h3>
-              <p class="d-sm-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit facilis, pariatur harum labore aperiam assumenda.</p>
-            </a>
+   	     	
 
-          </div>
-        </div>
+   </section> <!-- /intro -->
 
-        <div class="row">
-          <div class="col-12 text-center">
-            <a href="#" class="btn btn-primary btn-md">View All Services</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    -->
 
-    <!-- PORTFOLIO -->
+   <!-- about section
+   ================================================== -->
+   <section id="about">  
 
-    <section class="site-section block__62272" id="portfolio-section">
+   	<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>About</h5>
+   			<h1>Let me introduce myself.</h1>
+			<!--
+   			<div class="intro-info">
+
+   				<img src="images/face.jpg" alt="Profile Picture">
+
+   				<p class="lead">Lorem ipsum Exercitation culpa qui dolor consequat exercitation fugiat laborum ex ea eiusmod ad do aliqua occaecat nisi ad irure sunt id pariatur Duis laboris amet exercitation veniam labore consectetur ea id quis eiusmod.</p>
+			</div>  
+			   --> 			
+		</div>   		
+		   
+	   </div> <!-- /section-intro -->
+	   
+	<div class="row">
+		<div class="col-twelve">
+			<img src="images/face.jpg" alt="Profile Picture" style="padding-bottom: 20px;">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-twelve">
+			<p class="lead" style="font-size:18px;">Hi! My name is Vikas and I am a senior at Dublin High School and a member of the Dublin Engineering and Design Academy (DEDA). I am fascinated by computers, electronics, and mechanical design and I have gained an appreciation for the various disciplines of engineering through my high school courses and extracurricular activities. I aim to work more specifically with artificial intelligence and robotics to hopefully help push the boundaries of technology in this world. 
+				<br><br>
+				I discovered my passions for engineering through challenging classes, school clubs, internships, and opportunities from DEDA. I’ve been a part of Gael Force Robotics for three years, advancing from a lead builder and programmer in 2018 and 2019 to captaining my own team in 2020. Robotics became a timeless escape from reality and allowed me to develop a love for creating elegant and efficient designs for mechanical and software problems. Despite the season being cut short due to COVID-19, I’m proud of our accomplishments of elite competition rankings and the growth of my leadership. I am also the co-founder and vice president of the Dublin Science Olympiad team, where I managed administrative work and the finances of a $6K+ budget. I led and competed in physics/engineering division events which involved making rubber-band propelled model aircrafts, structurally efficient balsa wood boomilevers, precise distance travelling mousetrap-powered vehicles, mulltifarious Rube-Goldberg machines, high hangtime parachutes launched from soda bottle rockets, and complex circuit analysis. I got to work on more delicate and precise projects which often kept me up late at night with cyanoacrylate glue, epoxy, and Exacto knife cuts all over my hands! I am also a member of a competitive CyberPatriot team, where I specialized in creating automated scripts and securing operating systems vulnerabilities in Linux computers. 
+				<br><br>
+				More recently this summer, I interned at the cybersecurity company Cog Systems under the supervision of my DEDA mentor Rupert Young. Cog Systems is a small business based in Australia which specializes in securing mobile and IoT devices with embedded software and type-1 hypervisors. I worked on solutions to virtualized driver splitting in the Android Linux kernel for Cog’s Virtualized Mobile Device as well as secure mobile VPN connections. Despite the large knowledge gap between me and the Principal Engineer at Cog, I love the feeling of knowing absolutely nothing about a subject, then jumping straight into it and figuring it out, learning skills out of my comfort zone.
+				<br><br>
+				In my free time, I enjoy reading science fiction and philsophy, hiking long trails at national parks, and 3D printing cool designs. Thanks for visiting my website and feel free to look through my projects or contact me with any questions, comments, or concerns. 
+				</p>
+		</div>
+
+	</div>
+	<!--
+   	<div class="row about-content">
+
+   		<div class="col-six tab-full">
+
+   			<h3>Profile</h3>
+   			<p>Lorem ipsum Qui veniam ut consequat ex ullamco nulla in non ut esse in magna sint minim officia consectetur nisi commodo ea magna pariatur nisi cillum.</p>
+
+   			<ul class="info-list">
+   				<li>
+   					<strong>Fullname:</strong>
+   					<span>Juan Dela Cruz</span>
+   				</li>
+   				<li>
+   					<strong>Birth Date:</strong>
+   					<span>September 28, 1987</span>
+   				</li>
+   				<li>
+   					<strong>Job:</strong>
+   					<span>Freelancer, Frontend Developer</span>
+   				</li>
+   				<li>
+   					<strong>Website:</strong>
+   					<span>www.kardswebsite.com</span>
+   				</li>
+   				<li>
+   					<strong>Email:</strong>
+   					<span>me@kardswebsite.com</span>
+   				</li>
+
+   			</ul> 
+
+   		</div>
+
+   		<div class="col-six tab-full">
+
+   			<h3>Skills</h3>
+   			<p>Lorem ipsum Qui veniam ut consequat ex ullamco nulla in non ut esse in magna sint minim officia consectetur nisi commodo ea magna pariatur nisi cillum.</p>
+
+				<ul class="skill-bars">
+				   <li>
+				   	<div class="progress percent90"><span>90%</span></div>
+				   	<strong>HTML5</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent85"><span>85%</span></div>
+				   	<strong>CSS3</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent70"><span>70%</span></div>
+				   	<strong>JQuery</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent95"><span>95%</span></div>
+				   	<strong>PHP</strong>
+				   </li>
+				   <li>
+
+				   	<div class="progress percent75"><span>75%</span></div>
+				   	<strong>Wordpress</strong>
+				   </li>
       
+				</ul> 		
 
-      <div class="container">
+   		</div>
 
-        <div class="row mb-3">
-          <div class="col-12 text-center" data-aos="fade">
-            <h3 class="section-title-sub text-primary">Awesome Works</h3>
-            <h2 class="section-title mb-3">Projects</h2>
-          </div>
-        </div>
+	   </div>
+	   -->
 
-        <div class="row justify-content-center mb-5" data-aos="fade-up">
-          <div id="filters" class="filters text-center button-group col-md-7">
-            <button class="btn btn-primary active" data-filter="*">All</button>
-            <button class="btn btn-primary" data-filter=".web">Robotics</button>
-            <button class="btn btn-primary" data-filter=".design">Sci Oly</button>
-            <button class="btn btn-primary" data-filter=".brand">School</button>
-          </div>
-        </div>  
-        
-        <div id="posts" class="row no-gutter">
-          <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-            <a href="#" class="item-wrap">
-              <span class="text-center img-texxt">VEX <br> Tower Takeover</span>
-              <img class="img-fluid" src="images/robot500.png">
-            </a>
-          </div>
-          <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-            <a href="#" class="item-wrap">
-              <span class="text-center img-texxt">VEX <br> Turning Point</span>
-              <img class="img-fluid" src="images/tp690.png">
-            </a>
-          </div>
+   	
 
-          <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-            <a href="#" class="item-wrap">
-              <span class="text-center img-texxt">VEX <br> In the Zone</span>
-              <img class="img-fluid" src="images/xbot2250.png">
-            </a>
-          </div>
-
-          <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-
-            <a href="#" class="item-wrap">
-              <span class="text-center img-texxt">Infinite Output Gearshift Differential Transmission</span>
-              <img class="img-fluid" src="images/diff545.png">
-            </a>
-
-          </div>
-
-          <div class="item design col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-            <a href="#" class="item-wrap">
-              <span class="text-center img-texxt">Wright Stuff</span>
-              <img class="img-fluid" src="images/wrightstuff.png">
-            </a>
-          </div>
-
-          <div class="item design col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-            <a href="#" class="item-wrap">
-              <span class="text-center img-texxt">Boomilever</span>
-              <img class="img-fluid" src="images/boom.png">
-            </a>
-          </div>
-
-          <div class="item design col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-            <a href="#" class="item-wrap">
-              <span class="text-center img-texxt">Ping Pong Parachute</span>
-              <img class="img-fluid" src="images/chute.png">
-            </a>
-          </div>
-
-          <div class="item design col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-            <a href="#" class="item-wrap">
-              <span class="text-center img-texxt">Detector Building</span>
-              <img class="img-fluid" src="images/detector.png">
-            </a>
-          </div>
-
-          <div class="item design col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-            <a href="#" class="item-wrap">
-              <span class="text-center img-texxt">Gravity Vehicle</span>
-              <img class="img-fluid" src="images/gravity.png">
-            </a>
-          </div>
-
-          <div class="item design col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-            <a href="#" class="item-wrap">
-              <span class="text-center img-texxt">Mousetrap Vehicle</span>
-              <img class="img-fluid" src="images/trapvehicle.png">
-            </a>
-          </div>
-
-          <div class="item design col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-            <a href="#" class="item-wrap">
-              <span class="text-center img-texxt">Salinometer</span>
-              <img class="img-fluid" src="images/salinometer.png">
-            </a>
-          </div>
-
-          <div class="item design col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-            <a href="#" class="item-wrap">
-              <span class="text-center img-texxt">Mission Possible: <br> Rube Goldberg</span>
-              <img class="img-fluid" src="images/goldberg.png">
-            </a>
-          </div>
-
-          <div class="item brand col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-            <a href="#" class="item-wrap">
-              <span class="text-center img-texxt">TrashLine</span>
-              <img class="img-fluid" src="images/trashline.png">
-            </a>
-          </div>
-
-          <div class="item brand col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-            <a href="#" class="item-wrap">
-              <span class="text-center img-texxt">SmartSpecs</span>
-              <img class="img-fluid" src="images/specs.png">
-            </a>
-          </div>
-
-          <div class="item brand col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-            <a href="#" class="item-wrap">
-              <span class="text-center img-texxt">3D Reconstructions</span>
-              <img class="img-fluid" src="images/cosmos.png">
-            </a>
-          </div>
-
-          <div class="item brand col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-            <a href="#" class="item-wrap">
-              <span class="text-center img-texxt">CSE <br> Python Image Manipulation</span>
-              <img class="img-fluid" src="images/cse_pyimgman.png">
-            </a>
-          </div>
-
-          <div class="item brand col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-            <a href="#" class="item-wrap">
-              <span class="text-center img-texxt">CSE <br> MIT Scratch</span>
-              <img class="img-fluid" src="images/cse_scratch.png">
-            </a>
-          </div>
-
-          <div class="item brand col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-            <a href="#" class="item-wrap">
-              <span class="text-center img-texxt">POE <br> West Point Bridge Design</span>
-              <img class="img-fluid" src="images/bridge.png">
-            </a>
-          </div>
-
-          <div class="item brand col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-            <a href="#" class="item-wrap">
-              <span class="text-center img-texxt">POE <br> Solar/Hydrogen Fuel</span>
-              <img class="img-fluid" src="images/vroom.png">
-            </a>
-          </div>
-
-          <div class="item brand col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-            <a href="#" class="item-wrap">
-              <span class="text-center img-texxt">APCSA <br> Java Greenfoot</span>
-              <img class="img-fluid" src="images/greenfoot.png">
-            </a>
-          </div>
-
-          <div class="item brand col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-            <a href="#" class="item-wrap">
-              <span class="text-center img-texxt">APCSA <br> Android Studio App</span>
-              <img class="img-fluid" src="images/android.png">
-            </a>
-          </div>
-
-        </div>
-      </div>
-
-    </section>
-    
-    <section class="site-section" id="next-section">
-      <div class="container">
-
-        <div class="row mb-3">
-          <div class="col-12 text-center" data-aos="fade">
-            <h3 class="section-title-sub text-primary">Awesome Works</h3>
-            <h2 class="section-title mb-3">Work Experience</h2>
-          </div>
-        </div>
-
-        <div class="row justify-content-center">
-          <a href="resume.pdf" class="spepcial_link">Resume</a>
-        </div>
-        <div class="row justify-content-center">
-          <p> </p>
-        </div>
-        <div class="row justify-content-center">
-          <a href="work.html" class="spepcial_link">DEDA Field Trips/Guest Speakers</a>
-        </div>
+   </section> <!-- /process-->    
 
 
-      </div>
-    </section>
+   <!-- resume Section
+   ================================================== -->
+	<section id="resume" class="grey-section">
 
-    
+		<div class="row section-intro">
+   		<div class="col-twelve">
 
-    <section class="site-section block__45439" id="contact">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-12 text-center" data-aos="fade">
-            <h3 class="section-title-sub text-primary">Keep in touch</h3>
-            <h2 class="section-title mb-3">CONTACT</h2>
-          </div>
-        </div>
-        <div class="row mb-5 justify-content-center">
-          <a href="mailto:ummadisettyvikas@gmail.com" class="spepcial_link">Email me.</a>
-        </div>
+   			<h5>Resume</h5>
+   			<h1>More of my credentials.</h1>
 
-        <!--
-        <div class="row">
-          <div class="col-md-6 col-lg-6 mb-4">
-            <div class="block__86547 d-block d-xl-flex align-items-stretch">
-              <figure class="img" style="background-image: url('images/sq_img_1.jpg')">
-              </figure>
-              <div class="h-100">
-                <h3 class="mb-4"><a href="#">Undefined: The Third Boolean Values</a></h3>
-                <div class="block__27192 d-flex pt-1 border-top">
-                  <a href="#"><span class="icon-person"></span> Jacob Smith</a>
-                  <a href="#"><span class="icon-calendar-o"></span> 7 Apr 2019</a>
-                  <a href="#"><span class="icon-chat"></span> 2</a>
-                </div>
-              </div>
-            </div>
-          </div>
+   		</div>   		
+   	</div> <!-- /section-intro--> 
 
-          
-          <div class="col-md-6 col-lg-6 mb-4">
-            <div class="block__86547 d-block d-xl-flex align-items-stretch">
-              <figure class="img" style="background-image: url('images/sq_img_2.jpg')">
-              </figure>
-              <div class="h-100">
-                <h3 class="mb-4"><a href="#">Where Do You Learn HTML & CSS in 2020?</a></h3>
-                <div class="block__27192 d-flex pt-1 border-top">
-                  <a href="#"><span class="icon-person"></span> Jacob Smith</a>
-                  <a href="#"><span class="icon-calendar-o"></span> 7 Apr 2019</a>
-                  <a href="#"><span class="icon-chat"></span> 2</a>
-                </div>
-              </div>
-            </div>
-          </div>
+   	<div class="row resume-timeline">
 
-          <div class="col-md-6 col-lg-6 mb-4">
-            <div class="block__86547 d-block d-xl-flex align-items-stretch">
-              <figure class="img" style="background-image: url('images/sq_img_4.jpg')">
-              </figure>
-              <div class="h-100">
-                <h3 class="mb-4"><a href="#">Where Do You Learn HTML & CSS in 2020?</a></h3>
-                <div class="block__27192 d-flex pt-1 border-top">
-                  <a href="#"><span class="icon-person"></span> Jacob Smith</a>
-                  <a href="#"><span class="icon-calendar-o"></span> 7 Apr 2019</a>
-                  <a href="#"><span class="icon-chat"></span> 2</a>
-                </div>
-              </div>
-            </div>
-          </div>
+   		<div class="col-twelve resume-header">
 
-          <div class="col-md-6 col-lg-6 mb-4">
-            <div class="block__86547 d-block d-xl-flex align-items-stretch">
-              <figure class="img" style="background-image: url('images/sq_img_5.jpg')">
-              </figure>
-              <div class="h-100">
-                <h3 class="mb-4"><a href="#">Undefined: The Third Boolean Value</a></h3>
-                <div class="block__27192 d-flex pt-1 border-top">
-                  <a href="#"><span class="icon-person"></span> Jacob Smith</a>
-                  <a href="#"><span class="icon-calendar-o"></span> 7 Apr 2019</a>
-                  <a href="#"><span class="icon-chat"></span> 2</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          -->
+   			<h2>Work/Volunteer Experience</h2>
 
-        </div>
-      </div>
-    </section> 
+   		</div> <!-- /resume-header -->
 
-    <footer class="site-footer slanted-footer">
+   		<div class="col-twelve">
 
-      <a href="#top" class="smoothscroll scroll-top">
-        <span class="icon-keyboard_arrow_up"></span>
-      </a>
+   			<div class="timeline-wrap">
 
-      <div class="container">
-        <!--
-        <div class="row mb-5">
-          <div class="col-6 col-md-3 mb-4 mb-md-0">
-            <h3>Scenic Products</h3>
-            <ul class="list-unstyled">
-              <li><a href="#">Web Design</a></li>
-              <li><a href="#">Graphic Design</a></li>
-              <li><a href="#">Web Developers</a></li>
-              <li><a href="#">Resources</a></li>
-            </ul>
-          </div>
-          <div class="col-6 col-md-3 mb-4 mb-md-0">
-            <h3>Company</h3>
-            <ul class="list-unstyled">
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Career</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Resources</a></li>
-            </ul>
-          </div>
-          <div class="col-6 col-md-3 mb-4 mb-md-0">
-            <h3>Support</h3>
-            <ul class="list-unstyled">
-              <li><a href="#">Support</a></li>
-              <li><a href="#">Privacy</a></li>
-              <li><a href="#">Terms of Service</a></li>
-            </ul>
-          </div>
-          <div class="col-6 col-md-3 mb-4 mb-md-0">
-            <h3>Contact Us</h3>
-            <div class="footer-social">
-              <a href="#"><span class="icon-facebook"></span></a>
-              <a href="#"><span class="icon-twitter"></span></a>
-              <a href="#"><span class="icon-instagram"></span></a>
-              <a href="#"><span class="icon-linkedin"></span></a>
-            </div>
-          </div>
-        </div>
-        -->
+   				<div class="timeline-block">
 
-        <div class="row text-center">
-          <div class="col-12">
-            <p style="color:white; font-size: 20px;">Vikas Ummadisetty | Dublin High School | 2020</p>
-          </div>
-        </div>
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-graduation-cap"></i>
+	   				</div>
 
-        
-        <div class="row text-center">
-          <div class="col-12">
-            <p style="font-size:1px; color: #001f42; " class=""><small class="block">
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with love by Colorlib
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            </small></p>
+	   				<div class="timeline-header">
+	   					<h3>Cybersecurity Intern</h3>
+	   					<p>June 2020 - August 2020</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Cog Systems</h4>
+	   					<p>Worked on virtual driver sharing solutions on Android Linux kernel for Cog Virtualized Mobile Device architecture. Configured VPN and VirtIO tunnels and created secure network protocols on KVM type-2 hypervisor for mobile defense-grade applications.</p>
+	   				</div>
+
+				   </div> <!-- /timeline-block -->
+				   
+				<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-graduation-cap"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Researcher</h3>
+	   					<p>April 2020 - August 2020</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Aspiring Scholars Directed Research Program</h4>
+	   					<p>Conducted computational biology research on investigating and optimizing the structural binding affinity of epigallocatechin gallate	polyphenols to inhibit the aggregation of toxic beta amyloid peptides, a cause of neurodegeneration. Published research paper "Design and Screening of EGCG-derived Analogs for Inhibition of Amyloid Beta 42 Aggregation".</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+	   			<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-graduation-cap"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Co-founder and Programmer</h3>
+	   					<p>March 2020 - Present</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Atlas Robotics</h4>
+	   					<p>Independent robotics organization dedicated to competing in VEX Robotics and spreading robotics interest and resources to youth and underrepresented groups. Focused on designing, building, programming, and managing financial budget.</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+	   			<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-graduation-cap"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Museum Volunteer</h3>
+	   					<p>June 2019 - Present</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Chabot Space and Science Center</h4>
+	   					<p>Led interactive science demonstrations for public visitors to present abstract concepts in an understandable and engaging manner. (Volunteer time: 100 hours)</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+				<div class="timeline-block">
+
+					<div class="timeline-ico">
+						<i class="fa fa-graduation-cap"></i>
+					</div>
+
+					<div class="timeline-header">
+						<h3>UI Developer</h3>
+						<p>August 2020 - Present</p>
+					</div>
+
+					<div class="timeline-content">
+						<h4>ViraTrace</h4>
+						<p>Helped develop user interface with Flutter SDK for ViraTrace contact-tracing mobile application. Reached 150+ million users through offical Indian contact-tracing app.</p>
+					</div>
+					
+				</div> <!-- /timeline-block -->
+
+				<div class="timeline-block">
+
+					<div class="timeline-ico">
+						<i class="fa fa-graduation-cap"></i>
+					</div>
+
+					<div class="timeline-header">
+						<h3>Co-founder and Designer</h3>
+						<p>June 2020 - Present</p>
+					</div>
+
+					<div class="timeline-content">
+						<h4>YouthPPE</h4>
+						<p>Donated 3D printed personal protective equipment (PPE) young children in homeless shelters and child care services to slow the spread of COVID via the youth. Innovated conventional 3D printed PPE for application of children. Helped homeless services with secure backend website credential system.</p>
+					</div>
+					
+				</div> <!-- /timeline-block -->
+
+				<div class="timeline-block">
+
+					<div class="timeline-ico">
+						<i class="fa fa-graduation-cap"></i>
+					</div>
+
+					<div class="timeline-header">
+						<h3>Math Teacher</h3>
+						<p>September 2017 - Present</p>
+					</div>
+
+					<div class="timeline-content">
+						<h4>Fallon Middle School MathCounts</h4>
+						<p>Taught group of 25 middle school students competitive mathematics for MathCounts competition. Converted complex concepts into an understandable lecture. Assisted younger middle school students with high level analytical geometry, number theory, and combinatorics problems. (Volunteer time: 60 hours)</p>
+					</div>
+					
+				</div> <!-- /timeline-block -->
+
+
+				<div class="timeline-block">
+
+					<div class="timeline-ico">
+						<i class="fa fa-graduation-cap"></i>
+					</div>
+
+					<div class="timeline-header">
+						<h3>Student Engineer</h3>
+						<p>June 2018 - August 2018</p>
+					</div>
+
+					<div class="timeline-content">
+						<h4>UC Davis COSMOS</h4>
+						<p>Admitted into Biophysics and Robotics group. Worked with university faculty to model stochastic behavior of molecular motion in biological systems and engineer an autonomous robot which produced three dimensional reconstructions using computer vision and dense point clouds.</p>
+					</div>
+					
+				</div> <!-- /timeline-block -->
+
+				<div class="timeline-block">
+
+					<div class="timeline-ico">
+						<i class="fa fa-graduation-cap"></i>
+					</div>
+
+					<div class="timeline-header">
+						<h3>Primary Instructor</h3>
+						<p>June 2016 - September 2018</p>
+					</div>
+
+					<div class="timeline-content">
+						<h4>Kumon Math and Reading Center</h4>
+						<p>Tutored new students and provided graded feedback in	subjects of advanced literature analysis and high-level mathematics (algebra to calculus). Worked closely with younger students (PreK to 5th grade) to help develop good work habits and concentration.</p>
+					</div>
+					
+				</div> <!-- /timeline-block -->
+			
+			</div> <!-- /timeline-wrap -->   			
+
+   		</div> <!-- /col-twelve -->
+   		
+	   </div> <!-- /resume-timeline -->
+	   
+	   <div class="row resume-timeline">
+
+		<div class="col-twelve resume-header">
+
+			<h2>Activities/Societies</h2>
+
+		</div> <!-- /resume-header -->
+
+		<div class="col-twelve">
+
+			<div class="timeline-wrap">
+
+				<div class="timeline-block">
+
+					<div class="timeline-ico">
+						<i class="fa fa-graduation-cap"></i>
+					</div>
+
+					<div class="timeline-header">
+						<h3>Team Captain and Lead Programmer</h3>
+						<p>August 2017 - April 2020</p>
+					</div>
+
+					<div class="timeline-content">
+						<h4>Gael Force Robotics</h4>
+						<p>Led team of twelve members and facilitated robot designing, building, programming, and outreach. Programmed robotics in C++ with PROS API on VEX V5 Platform. Created efficient and precise autonomous odometry-based motion profile movements.</p>
+					</div>
+
+				</div> <!-- /timeline-block -->
+
+				<div class="timeline-block">
+
+					<div class="timeline-ico">
+						<i class="fa fa-graduation-cap"></i>
+					</div>
+
+					<div class="timeline-header">
+						<h3>Co-founder and Vice President</h3>
+						<p>August 2017 - April 2020</p>
+					</div>
+
+					<div class="timeline-content">
+						<h4>Dublin Science Olympiad</h4>
+						<p>Facilitated engineering build/physics based events and managed team financial budget of $6K+. Participated in Boomilever (balsa wood bridges), Wright Stuff (model aircrafts), Ping Pong Parachute (parachute payload from bottle rocket), Mission Possible (Rube Goldberg), Mousetrap Vehicle, Gravity Vehicle, Detector Building (accurate electronic temperature sensor), Water Quality (digital salinometer), Thermodynamics, and Circuit Lab (complex circuit analysis and theory).</p>
+					</div>
+
+				</div> 
+
+				<div class="timeline-block">
+
+					<div class="timeline-ico">
+						<i class="fa fa-graduation-cap"></i>
+					</div>
+
+					<div class="timeline-header">
+						<h3>Linux Lead</h3>
+						<p>August 2017 - April 2020</p>
+					</div>
+
+					<div class="timeline-content">
+						<h4>Gael Force CyberPatriot</h4>
+						<p>Created automated scripts to secure operating system vulnerabilities in Linux machines.</p>
+					</div>
+
+				</div> 
+
+				
+				
+			 
+		 
+		 </div> <!-- /timeline-wrap -->   			
+
+		</div> <!-- /col-twelve -->
+		
+	</div>
+   	
+   	<div class="row resume-timeline">
+
+   		<div class="col-twelve resume-header">
+
+   			<h2>Education</h2>
+
+   		</div> <!-- /resume-header -->
+
+   		<div class="col-twelve">
+
+   			<div class="timeline-wrap">
+
+   				<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-briefcase"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>High School</h3>
+	   					<p>August 2017 - June 2021</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Dublin High School</h4>
+	   					<p>Cumulative GPA: 4.53/4<br>Relevant Coursework: AP Computer Science A, AP Computer Science Principles, Honors Digital Electronics, Honors Principles of Engineering, AP Calculus, AP Statistics</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+   			</div> <!-- /timeline-wrap -->   			
+
+   		</div> <!-- /col-twelve -->
+   		
+	   </div> <!-- /resume-timeline -->
+	   
+	   <div class="row button-section">
+		<div class="col-twelve">
+			<a href="deda.html" title="" target="_blank" class="button stroke" style="width:300px;">DEDA Speakers/Trips</a>
+			<a href="resume.pdf" title="Download" class="button button-primary">Download Resume</a>
+		</div>   		
+	</div>
+		
+	</section> <!-- /features -->
+
+
+	<!-- Portfolio Section
+   ================================================== -->
+	<section id="portfolio">
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Projects</h5>
+   			<h1>Check Out Some of My Works.</h1>
+
+   			<p class="lead"></p>
+
+   		</div>   		
+   	</div> <!-- /section-intro--> 
+
+   	<div class="row portfolio-content">
+
+   		<div class="col-twelve">
+
+   			<!-- portfolio-wrapper -->
+	         <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
+
+	         	<div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/tt.png" alt="Liberty" style="width:100%;">
+	                  <a href="robo.html" class="overlay" target="_blank">	                  	           
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+		     					       <h3 class="folio-title">Robotics</h3>	     					    
+		     					    	 <span class="folio-types">
+		     					       	  Click for more!
+		     					       </span>
+		     					   </div>	                      	
+	                     </div>                    
+	                  </a>
+	               </div>	               
+	        		</div> <!-- /folio-item -->
+
+	        		<div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/boom.png" alt="Shutterbug">
+	               	<a href="scioly.html" class="overlay" target="_blank">              		                  
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Science Olympiad</h3>	     					    
+		     					    	<span class="folio-types">
+											Click for more!
+		     					      </span>		     		
+		     					   </div> 	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->
+
+	            <div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/vroom.png"alt="Clouds">
+	                  <a href="pltw.html" class="overlay" target="_blank">             		                  
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">PLTW</h3>	     					    
+		     					    	<span class="folio-types">
+											Click for more!
+		     					      </span>		     		
+		     					   </div> 	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+					</div> <!-- /folio-item -->
+					
+					<div class="bgrid folio-item">
+						<div class="item-wrap">
+							<img src="images/trashline.png" alt="Beetle" style="width:100%;">
+						   <a href="entrep.html" class="overlay" target="_blank">                  	                 
+							  <div class="folio-item-table">
+								  <div class="folio-item-cell">
+									  <h3 class="folio-title">Entrepreneurship Projects</h3>	     					    
+											  <span class="folio-types">
+												Click for more!
+											</span>		     		
+										 </div>  	                      	
+							  </div>                    
+						   </a>
+						</div>
+						 </div> <!-- /folio-item -->   
+
+						 <div class="bgrid folio-item">
+							<div class="item-wrap">
+								<img src="images/cosmos.png" alt="Beetle" style="width:100%;">
+							   <a href="summer.html" class="overlay" target="_blank">                  	                 
+								  <div class="folio-item-table">
+									  <div class="folio-item-cell">
+										  <h3 class="folio-title">Summer Projects</h3>	     					    
+												  <span class="folio-types">
+													Click for more!
+												</span>		     		
+											 </div>  	                      	
+								  </div>                    
+							   </a>
+							</div>
+							 </div> <!-- /folio-item --> 
+
+	            <div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/3d.jpg" alt="Beetle" style="width:100%;">
+	                  <a href="threed.html" class="overlay" target="_blank">                  	                 
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">3D Prints</h3>	     					    
+		     					    	<span class="folio-types">
+											Click for more!
+		     					      </span>		     		
+		     					   </div>  	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+					</div> <!-- /folio-item -->
+					
+
+					  
+					
+					
+
+	            <!-- modal popups - begin
+	            ============================================================= -->
+		   
+
+
+				   <!-- modal popups - end
+	            ============================================================= -->
+
+	         </div> <!-- /portfolio-wrapper --> 
+
+   		</div>  <!-- /twelve -->   
+
+   	</div> <!-- /portfolio-content --> 
+		
+	</section> <!-- /portfolio --> 
+	
+	
+   <!-- contact
+   ================================================== -->
+	<section id="contact">
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Contact</h5>
+   			<h1>I'd Love To Hear From You.</h1>
+
+   		</div> 
+   	</div> <!-- /section-intro -->
+
+   	<div class="row contact-form">
+
+   		<div class="col-twelve">
+
             
-          </div>
-        </div>
-      </div>
+
+            <!-- contact-warning -->
+            <div id="message-warning">            	
+            </div>            
+            <!-- contact-success -->
+      		<div id="message-success">
+               <i class="fa fa-check"></i>Your message was sent, thank you!<br>
+      		</div>
+
+         </div> <!-- /col-twelve -->
+   		
+   	</div> <!-- /contact-form -->
+
+   	<div class="row contact-info">
+
+   		<div class="col-twelve tab-full collapse">
+
+   			<div class="icon">
+   				<i class="icon-mail"></i>
+   			</div>
+
+   			<h5>Email Me At</h5>
+
+   			<p>ummadisettyvikas@gmail.com
+			   </p>
+
+   	</div> <!-- /contact-info -->
+		
+	</section> <!-- /contact -->
 
 
-    </footer>
-  
-  </div>
+   <!-- footer
+   ================================================== -->
 
-    <!-- SCRIPTS -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
-    <script src="js/stickyfill.min.js"></script>
-    <script src="js/jquery.fancybox.min.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
-    
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/jquery.animateNumber.min.js"></script>
-    
-    <script src="js/custom.js"></script>
-  </body>
+   <footer>
+     	<div class="row">
+
+     		<div class="col-six tab-full pull-right social">
+
+     			
+	      		
+	      </div>
+
+      	<div class="col-six tab-full">
+	      	<div class="copyright">
+		        	<span>© Copyright 2020</span> 
+		        	<span style="font-size:0.1px;">Design by <a href="http://www.styleshout.com/">styleshout</a></span>	         	
+		         </div>		                  
+	      	</div>
+
+	      	<div id="go-top">
+		         <a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
+		      </div>
+
+      	</div> <!-- /row -->     	
+   </footer>  
+
+   <div id="preloader"> 
+    	<div id="loader"></div>
+   </div> 
+
+   <!-- Java Script
+   ================================================== --> 
+   <script src="js/jquery-2.1.3.min.js"></script>
+   <script src="js/plugins.js"></script>
+   <script src="js/main.js"></script>
+
+</body>
+
 </html>
