@@ -315,6 +315,36 @@
 		</div>
 	</div>
 
+
+	<div class="row section-intro">
+		<div class="col-twelve">
+			<h1>Programmable Logic Design</h1>
+			<h3>Honors Digital Electronics<br>March 6, 2021 - March 13, 2021</h3>
+		</div>
+	</div>
+	<div class="row" style="margin-bottom:100px;">
+		<div class="col-five">
+			<img src="images/circuit.jpg" />
+		</div>
+		<div class="col-seven">
+			
+			<p>The objective of the Programmable Logic Design project was to create a display circuit that would automatically cycle through at least 16 states using 
+				four-bit inputs. To fulfill the requirements, I created a scrolling display using four seven-segment displays that showed the message "free food here", 
+				targetted to restaurants seeking to improve business. To make the scrolling display, I first created logic expressions to map the four-bit inputs to 
+				seven outputs, each representing a segment on the seven-segment display. Knowing that the subsequent seven segment displays were essentially increments of the 
+				first seven-segment display, I used bit adders to re-express the four-bit counts for the three other displays. Then, I used a multiplexer/de-multiplexer system 
+				to allow the four seven-segment displays to take turns using the core logic expressions. This circuit design is also easily scalable to add more seven-segment displays, 
+				since new logic does not need to be created. In this manner, the four seven-segment displays shift the characters to the left at a readable place, similar to 
+				how modern digital advertisement boards function. All logic was programmed into a Cmod S6 programmable logic device (PLD), which eliminated the need for 
+				logic gate ICs. PLDs are a powerful device that can reduce complex circuits into a single chip. More details of the design process and technical specifications can be found in our 
+				project <a target="_blank" href="https://docs.google.com/document/d/1Ga5OO3Oz8pp8ltnV5SRRB8YGmWu8P08jO7U37Em537Q/edit?usp=sharing">documentation</a>. 
+				<br><br>
+				<em>See <a target="_blank" href="https://docs.google.com/document/d/1LQnHtYsmQgSl0TbM-w4w_NLfpRFXXjC_6xgjZ-j-Jew/edit?usp=sharing">Rubric and Requirements</a> for more details.</em>
+						
+</p>
+		</div>
+	</div>
+
 	</section>
 
     
